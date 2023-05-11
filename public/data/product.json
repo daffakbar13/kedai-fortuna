@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "product_category_id": 1,
+            "product_name": "Risol Ayam Original",
+            "price": 2500,
+            "stock": 99
+        },
+        {
+            "product_category_id": 1,
+            "product_name": "Risol Ayam Pedas",
+            "price": 2500,
+            "stock": 99
+        },
+        {
+            "product_category_id": 1,
+            "product_name": "Risol Sayur",
+            "price": 2500,
+            "stock": 99
+        },
+        {
+            "product_category_id": 1,
+            "product_name": "Risol Beef Burger",
+            "price": 2500,
+            "stock": 99
+        },
+        {
+            "product_category_id": 1,
+            "product_name": "Risol Pizza",
+            "price": 2500,
+            "stock": 99
+        },
+        {
+            "product_category_id": 1,
+            "product_name": "Risol Mozzarela",
+            "price": 2500,
+            "stock": 99
+        }
+    ]
+}

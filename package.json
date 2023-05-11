@@ -3,20 +3,53 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 1105",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start -p 1105",
+    "lint": "next lint",
+    "lint:tsc": "tsc --noEmit",
+    "lint:eslint": "eslint --ext .js,.ts,.tsx .",
+    "lint:prettier": "prettier --check .",
+    "fix": "prettier --write . && eslint --fix --ext .js,.ts,.tsx ."
   },
   "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.0",
+    "@mui/styled-engine-sc": "^5.12.0",
     "@types/node": "20.1.2",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
+    "axios": "^1.4.0",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
+    "humps": "^2.0.1",
+    "lodash": "^4.17.21",
     "next": "13.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.0.4"
+    "react-query": "^3.39.3",
+    "styled-components": "^6.0.0-rc.1",
+    "typescript": "5.0.4",
+    "zustand": "^4.3.8"
+  },
+  "peerDependencies": {
+    "@fontsource/roboto": "^4.5.8"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
+    "@types/humps": "^2.0.2",
+    "@types/lodash": "^4.14.194",
+    "autoprefixer": "^10.4.14",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-sonarjs": "^0.19.0",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8"
   }
 }
