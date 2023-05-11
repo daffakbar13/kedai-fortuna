@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <ReactQueryProvider>
         <RootLayout>
           <MainLayout>
-          <Component {...pageProps} />
+            <Component {...pageProps} />
           </MainLayout>
         </RootLayout>
       </ReactQueryProvider>
