@@ -3,9 +3,11 @@ import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
 import AddCircleOutlineRoundedIcon from '@mui/icons-material/AddCircleOutlineRounded'
 import { useFortunaQuery } from '@fortuna/utils/hooks'
+// import useProductStore from '@fortuna/utils/stores/product'
 
 export default function Home() {
   const products = useFortunaQuery('productList')
+  // const { addStock } = useProductStore()
   return (
     <Grid container columns={6} spacing={1.5}>
       {products.isSuccess && (
@@ -21,7 +23,12 @@ export default function Home() {
                   Stok : {p.stock}
                 </Typography>
                 <Stack direction="row-reverse">
-                  <AddCircleOutlineRoundedIcon />
+                  <AddCircleOutlineRoundedIcon
+                    onClick={() => {
+                      // addStock(i)
+                      // products.refetch()
+                    }}
+                  />
                 </Stack>
               </Stack>
             </Grid>
