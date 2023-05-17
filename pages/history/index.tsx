@@ -85,15 +85,18 @@ export default function History() {
             },
           ]}
           rows={getData()}
+          loading={history.isFetching}
         />
       </Box>
-      <Button>
-        {'Total: Rp. '}
-        {getData()
-          .map((e) => e.price * e.quantity)
-          .reduce((a, b) => a + b)
-          .toLocaleString()}
-      </Button>
+      {getData().length > 0 && (
+        <Button>
+          {'Total: Rp. '}
+          {getData()
+            .map((e) => e.price * e.quantity)
+            .reduce((a, b) => a + b)
+            .toLocaleString()}
+        </Button>
+      )}
     </Stack>
   )
 }
