@@ -17,7 +17,6 @@ export const theme = createTheme({
       defaultProps: {
         size: 'large',
         variant: 'contained',
-        disableElevation: true,
       },
       styleOverrides: {
         root: {

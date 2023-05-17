@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Queries() {
   const q = useQueryKeyStore()
-  useQueries([q.productList])
+  useQueries([q.productList, q.categoryList, q.historyList])
 
   return <></>
 }
